@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario - Rotura de Vitrocerámica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Rotura de vitrocerámica</h2>
+    <p>Por favor, rellene el siguiente formulario:</p>
+
+    <form>
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" />
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" />
+
+      <label for="funciona">¿Sigue funcionando correctamente?</label>
+      <select id="funciona" name="funciona">
+        <option>Opción</option>
+        <option>Sí</option>
+        <option>No</option>
+      </select>
+
+      <label for="causa">¿Cuál fue la causa del daño?</label>
+      <select id="causa" name="causa">
+        <option>Opción</option>
+        <option>Opción1</option>
+        <option>Opción2</option>
+        <option>Opción3</option>
+      </select>
+
+      <label for="comentarios">¿Algo que añadir?</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <p>Adjunte fotos donde se vea el daño y una vista general de la vitrocerámica.</p>
+      <button type="button" class="photo-btn">Realizar foto</button>
+    </form>
+  </div>
+</body>
+</html>

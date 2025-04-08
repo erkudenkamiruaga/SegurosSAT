@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subida de fotos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Suba las fotos que se solicitan</h2>
+
+    <form>
+      <div class="photo-grid">
+        <div class="photo-item">
+          <label for="fotoGeneral">Vista general</label>
+          <div class="photo-placeholder">
+            <input type="file" id="fotoGeneral" name="fotoGeneral" accept="image/*" />
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <label for="fotoDetalle">Vista detallada del daño</label>
+          <div class="photo-placeholder">
+            <input type="file" id="fotoDetalle" name="fotoDetalle" accept="image/*" />
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <label for="fotoArriba">Vista desde arriba</label>
+          <div class="photo-placeholder">
+            <input type="file" id="fotoArriba" name="fotoArriba" accept="image/*" />
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="photo-btn">Enviar fotos</button>
+    </form>
+  </div>
+</body>
+</html>

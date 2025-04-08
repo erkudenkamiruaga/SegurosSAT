@@ -137,3 +137,45 @@ body {
     background-color: #04044c;
   }
   
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 1rem;
+  }
+  
+  .photo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .photo-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo-placeholder input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  

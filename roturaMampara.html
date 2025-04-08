@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario - Rotura de Mampara</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Rotura de mampara de baño</h2>
+    <p>Por favor, rellene el siguiente formulario:</p>
+
+    <form>
+      <label for="tipoVidrio">¿El vidrio es templado o laminado?</label>
+      <select id="tipoVidrio" name="tipoVidrio">
+        <option>Templado</option>
+        <option>Laminado</option>
+      </select>
+
+      <label for="causa">¿Se rompió por un golpe o por presión al abrir/cerrar?</label>
+      <select id="causa" name="causa">
+        <option>Golpe</option>
+        <option>Presión</option>
+      </select>
+
+      <label for="comentarios">¿Algo que añadir?</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <p>Adjunte fotos donde se vea el daño y una vista general de la mampara.</p>
+      <a href="subirFotos.html"><button class="photo-btn">Realizar fotos</button></a> 
+    </form>
+  </div>
+</body>
+</html>

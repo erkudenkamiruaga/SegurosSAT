@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario - Rotura de Cristal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Rotura de cristal</h2>
+    <p>Por favor, rellene el siguiente formulario:</p>
+
+    <form>
+      <label for="tipoCristal">Tipo de cristal:</label>
+      <select id="tipoCristal" name="tipoCristal">
+        <option>Templado</option>
+        <option>Laminado</option>
+        <option>Sencillo</option>
+        <option>Otro</option>
+      </select>
+
+      <label for="ubicacion">Ubicaciones:</label>
+      <select id="ubicacion" name="ubicacion">
+        <option>Puerta</option>
+        <option>Ventana</option>
+        <option>Mesa</option>
+        <option>Mampara</option>
+        <option>Otro</option>
+      </select>
+
+      <label for="funciona">¿Sigue funcionando correctamente?</label>
+      <select id="funciona" name="funciona">
+        <option>Sí</option>
+        <option>No</option>
+        <option>Parcialmente</option>
+      </select>
+
+      <label for="causa">¿Cuál fue la causa del daño?</label>
+      <select id="causa" name="causa">
+        <option>Golpe accidental</option>
+        <option>Condiciones climáticas</option>
+        <option>Defecto de fabricación</option>
+        <option>Otro</option>
+      </select>
+
+      <label for="comentarios">¿Algo que añadir?</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <p>Adjunte fotos donde se vea el daño y una vista general del cristal</p>
+      <button type="button" class="photo-btn">Realizar foto</button>
+    </form>
+  </div>
+</body>
+</html>

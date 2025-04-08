@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #add8e6; /* azul claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+  }
+  
+  p {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #0b0b74;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #04044c;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto 30px;
+  }
+  
+  .option-btn {
+    padding: 15px 10px;
+    border: 2px solid #0b0b74;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .option-btn:hover {
+    background-color: #e0e0ff;
+  }
+  
+  .continue-btn {
+    background-color: #3a5df3;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .continue-btn:hover {
+    background-color: #2947d3;
+  }
+  
+  .form-container {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #0b0b74;
+    font-weight: bold;
+    color: white;
+    background-color: #0b0b74;
+    appearance: none;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  .photo-btn {
+    background-color: #0b0b74;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: center;
+  }
+  
+  .photo-btn:hover {
+    background-color: #04044c;
+  }
+  

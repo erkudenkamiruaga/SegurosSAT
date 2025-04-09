@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario - Rotura de Vitrocerámica</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body style="min-height: 100vh; padding: 40px;">
+  <a href="/seleccionarIncidencia.html" style="margin-top: 40px; display: block;">
+    <img src="/logo.png" alt="SAT Logo" style="width: 150px; height: auto;">
+  </a>
+  <div class="form-container">
+    <h2>Rotura de vitrocerámica</h2>
+    <p>Por favor, rellene el siguiente formulario:</p>
+
+    <form onsubmit="event.preventDefault(); window.location.href='/subirFotos.html';">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" />
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" />
+
+      <label for="funciona">¿Sigue funcionando correctamente?</label>
+      <select id="funciona" name="funciona">
+        <option>Opción</option>
+        <option>Sí</option>
+        <option>No</option>
+      </select>
+
+      <label for="causa">¿Cuál fue la causa del daño?</label>
+      <input type="text" id="causa" name="causa" />
+
+      <label for="comentarios">¿Algo que añadir?</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <p>Adjunte fotos donde se vea el daño y una vista general de la vitrocerámica.</p>
+      <div class="button-container">
+        <button type="submit">Realizar fotos</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

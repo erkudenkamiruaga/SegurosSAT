@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmación de envío</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body style="min-height: 100vh; padding: 0px;">
+  <a href="/seleccionarIncidencia.html" style="margin-top: 40px; display: block;">
+    <img src="/logo.png" alt="SAT Logo" style="width: 150px; height: auto;">
+  </a>
+  <div class="form-container">
+    <h2>¡Gracias por sus fotos!</h2>
+    <p>Tu parte ha sido recibido, se está evaluando<br />
+    y recibirás actualizaciones en breve.</p>
+
+    <p>Por favor introduce el correo para recibir el parte por mail:</p>
+    <form id="emailForm" onsubmit="return handleSubmit(event)">
+      <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Correo electrónico" 
+        required 
+      />
+      <div class="button-container">
+        <button type="submit">Enviar parte</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    async function handleSubmit(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const tipoRotura = localStorage.getItem('tipoRotura');
+
+      if (!email) {
+        alert('Por favor, introduce un correo válido');
+        return false;
+      }
+      if (!tipoRotura) {
+        alert('No se ha seleccionado un tipo de rotura');
+        return false;
+      }
+
+      try {
+        const response = await fetch('/enviar-parte', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, tipoRotura }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          alert('El parte ha sido enviado a: ' + email);
+          window.location.href = '/esperarParte.html';
+        } else {
+          alert('Error: ' + data.error);
+        }
+      } catch (error) {
+        alert('Error al conectar con el servidor');
+        console.error(error);
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>

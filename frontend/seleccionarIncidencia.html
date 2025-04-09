@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seleccionar Incidencia</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .option-btn {
+      width: 200px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body style="min-height: 100vh; padding: 0px;">
+  <a href="/bienvenido.html" style="margin-top: 40px; display: block;">
+    <img src="/logo.png" alt="SAT Logo" style="width: 150px; height: auto;">
+  </a>
+  <div class="container">
+    <h2>Por favor, seleccione el tipo de incidencia que desea reportar.</h2>
+    
+    <div class="options-grid">
+      <button class="option-btn" onclick="seleccionarIncidencia('roturaVitroceramica')">Rotura de vitrocerámica</button>
+      <button class="option-btn" onclick="seleccionarIncidencia('roturaCristal')">Rotura de cristal</button>
+      <button class="option-btn" onclick="seleccionarIncidencia('roturaEspejo')">Rotura de espejo</button>
+      <button class="option-btn" onclick="seleccionarIncidencia('roturaMampara')">Rotura de mampara</button>
+    </div>
+  </div>
+
+  <script>
+    function seleccionarIncidencia(tipo) {
+      localStorage.setItem('tipoRotura', tipo);
+      window.location.href = '/' + tipo + '.html';
+    }
+  </script>
+</body>
+</html>

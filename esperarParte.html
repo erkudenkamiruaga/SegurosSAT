@@ -6,16 +6,23 @@
   <title>Confirmación de envío</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body style="min-height: 100vh; padding: 0px;">
+  <a href="seleccionarIncidencia.html" style="margin-top: 40px; display: block;">
+    <img src="logo.png" alt="SAT Logo" style="width: 150px; height: auto;">
+  </a>
   <div class="form-container">
     <h2>¡Gracias por sus fotos!</h2>
     <p>Tu parte ha sido recibido, se está evaluando<br />
     y recibirás actualizaciones en breve.</p>
 
-    <p>Por favor introduce el mail para recibirlo:</p>
+    <p>Por favor introduce el correo para recibir el parte por mail:</p>
     <form>
       <input type="email" name="email" id="email" placeholder="Correo electrónico" />
     </form>
+  </div>
+
+  <div class="button-container">
+    <button type="button" onclick="location.href='esperarParte.html'">Enviar parte</button>
   </div>
 </body>
 </html>

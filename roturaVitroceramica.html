@@ -6,7 +6,10 @@
   <title>Formulario - Rotura de Vitrocerámica</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body style="min-height: 100vh; padding: 40px;">
+  <a href="seleccionarIncidencia.html" style="margin-top: 40px; display: block;">
+    <img src="logo.png" alt="SAT Logo" style="width: 150px; height: auto;">
+  </a>
   <div class="form-container">
     <h2>Rotura de vitrocerámica</h2>
     <p>Por favor, rellene el siguiente formulario:</p>
@@ -32,7 +35,9 @@
       <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
       <p>Adjunte fotos donde se vea el daño y una vista general de la vitrocerámica.</p>
-      <a href="subirFotos.html"><button>Realizar fotos</button></a> 
+      <div class="button-container">
+        <button type="button" onclick="location.href='subirFotos.html'">Realizar fotos</button>
+      </div>
     </form>
   </div>
 </body>

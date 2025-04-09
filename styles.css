@@ -178,4 +178,11 @@ body {
     margin-top: 10px;
     font-size: 16px;
   }
-  
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    margin-top: 10px;
+  }
